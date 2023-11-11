@@ -1,10 +1,5 @@
 
 <!DOCTYPE HTML>
-<!--
-	蓝蓝LanLan by HTML5 UP 蓝蓝LanLan
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>蓝蓝LanLan</title>
@@ -23,7 +18,7 @@
 						<nav class="links">
 							<ul>
 								<li><a href="#">Lorem</a></li>
-								<li><a href="#">Ipsum</a></li>
+								<li><a href="#">下载</a></li>
 								<li><a href="#">Feugiat</a></li>
 								<li><a href="#">Tempus</a></li>
 								<li><a href="#">Adipiscing</a></li>
@@ -65,7 +60,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<h3>Dolor sit amet</h3>
+											<h3>下载</h3>
 											<p>Sed vitae justo condimentum</p>
 										</a>
 									</li>
@@ -500,10 +495,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 						<!-- Intro -->
 							<section id="intro">
-								<a href="#" class="logo"><img src="images/logo.jpg" alt="" /></a>
+								<a href="#" class="logo"><img src="images/logo.png" alt="" /></a>
 								<header>
-									<h2>Future Imperfect</h2>
-									<p>Another fine responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
+									<h2>蓝蓝LanLan</h2>
+									<p>你好世界! Hello world!</p>
 								</header>
 							</section>
 
@@ -556,14 +551,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 						<!-- Posts List -->
 							<section>
-								<ul class="posts">
+<!--								<ul class="posts">
 									<li>
 										<article>
 											<header>
 												<h3><a href="single.html">Lorem ipsum fermentum ut nisl vitae</a></h3>
 												<time class="published" datetime="2015-10-20">October 20, 2015</time>
 											</header>
-											<a href="single.html" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<a href="single.html" class="image2"><img src="images/pic08.jpg" alt="" /></a>
 										</article>
 									</li>
 									<li>
@@ -572,7 +567,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 												<h3><a href="single.html">Convallis maximus nisl mattis nunc id lorem</a></h3>
 												<time class="published" datetime="2015-10-15">October 15, 2015</time>
 											</header>
-											<a href="single.html" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<a href="single.html" class="image2"><img src="images/pic09.jpg" alt="" /></a>
 										</article>
 									</li>
 									<li>
@@ -581,7 +576,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 												<h3><a href="single.html">Euismod amet placerat vivamus porttitor</a></h3>
 												<time class="published" datetime="2015-10-10">October 10, 2015</time>
 											</header>
-											<a href="single.html" class="image"><img src="images/pic10.jpg" alt="" /></a>
+											<a href="single.html" class="image2"><img src="images/pic10.jpg" alt="" /></a>
 										</article>
 									</li>
 									<li>
@@ -590,7 +585,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 												<h3><a href="single.html">Magna enim accumsan tortor cursus ultricies</a></h3>
 												<time class="published" datetime="2015-10-08">October 8, 2015</time>
 											</header>
-											<a href="single.html" class="image"><img src="images/pic11.jpg" alt="" /></a>
+											<a href="single.html" class="image2"><img src="images/pic11.jpg" alt="" /></a>
 										</article>
 									</li>
 									<li>
@@ -603,12 +598,25 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 										</article>
 									</li>
 								</ul>
-							</section>
+							</section>-->
 
 						<!-- About -->
+						<iframe src="https://discord.com/widget?id=1083967368545443870&theme=dark" width="400" height="700" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 							<section class="blurb">
 								<h2>关于</h2>
-								<p>蓝蓝LanLan的网站</p>
+								<p>蓝蓝LanLan的网站 由<a href="https://github.com/China-LanLan/LanLan-WEB">GitHub</a>托管<br>邮箱:China-LanLan@outlook.com</p><button id="copyInput">复制邮箱</button>
+								<script>
+                                     new ClipboardJS('#copyInput', {
+                                         text: function(trigger) {
+                                             return "China-LanLan@outlook.com";
+                                         }
+                                     }).on('success', function(e) {
+                                        alert("复制成功");
+                                        e.clearSelection();
+                                     }).on('error', function(e) {
+                                         alert('错误');
+                                     });
+                                </script>
 								<ul class="actions">
 									<li><a href="#" class="button">了解更多</a></li>
 								</ul>
@@ -620,10 +628,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
-									<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://discord.gg/gAzshUUqCY" class="fa-discord"><span class="label">Discord</span></a></li>
+									<li><a href="#" class="icon solid fa-envelope" style="color: #aaaaaa;"><span class="label">Email</span></a></li>
+									<li><a href="https://github.com/China-LanLan/LanLan-WEB" class="fa-github" style="color: #aaaaaa;"><span 
+									class="label">GitHub</span></a></li>			 
 								</ul>
-								<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+								<p class="copyright">&copy; LanLan <a
 							</section>
 
 					</section>
@@ -638,7 +648,4 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 
 	</body>
-<iframe src="https://discord.com/widget?id=1084143338522943560&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-	<iframe src="https://discord.com/widget?id=1083967368545443870&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-	javascript:alert("你是傻逼");
 </html>

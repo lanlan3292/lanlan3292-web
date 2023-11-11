@@ -2284,14 +2284,28 @@ input, select, textarea {
 /* Image */
 
 	.image {
+		border-radius: 10px 10px 0px 0px;
 		border: 0;
 		display: inline-block;
 		position: relative;
 	}
 
 		.image img {
+			border-radius: 10px 10px 0px 0px;
 			display: block;
 		}
+
+		.image2 {
+			border-radius: 10px 0px 0px 10px;
+			border: 0;
+			display: inline-block;
+			position: relative;
+		}
+	
+			.image2 img {
+				border-radius: 10px 0px 0px 10px;
+				display: block;
+			}
 
 		.image.left, .image.right {
 			max-width: 40%;
@@ -2324,18 +2338,21 @@ input, select, textarea {
 			}
 
 		.image.featured {
+			border-radius: 10px;
 			display: block;
 			margin: 0 0 3em 0;
 			width: 100%;
 		}
 
 			.image.featured img {
+				border-radius: 10px;
 				width: 100%;
 			}
 
 			@media screen and (max-width: 736px) {
 
 				.image.featured {
+					border-radius: 10px;
 					margin: 0 0 1.5em 0;
 				}
 
@@ -3413,15 +3430,15 @@ input, select, textarea {
 
 	#intro .logo {
 		border-bottom: 0;
+		border-radius: 10px;
 		display: inline-block;
 		margin: 0 0 1em 0;
 		overflow: hidden;
 		position: relative;
-		width: 4em;
 	}
 
 		#intro .logo:before {
-			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100px' height='100px' viewBox='0 0 100 100' preserveAspectRatio='none' zoomAndPan='disable'%3E%3Cpolygon points='0,0 100,0 100,25 50,0 0,25' style='fill:%23f4f4f4' /%3E%3Cpolygon points='0,100 100,100 100,75 50,100 0,75' style='fill:%23f4f4f4' /%3E%3C/svg%3E");
+			border-bottom: 0;
 			background-position: top left;
 			background-repeat: no-repeat;
 			background-size: 100% 100%;
@@ -3435,8 +3452,8 @@ input, select, textarea {
 		}
 
 		#intro .logo img {
+			border-bottom: 0;
 			display: block;
-			margin-left: -0.25em;
 			width: 4.5em;
 		}
 
@@ -3609,3 +3626,25 @@ input, select, textarea {
 			}
 
 		}
+
+
+		.fa-discord {
+			background: url(discord.svg);
+		  }
+		.fa-github {
+			background: url(github.svg);
+		  }
+
+
+		  
+		  .mask {
+			background-color: #252525;
+			color: #252525;
+			transition: color 0.5s;
+		}
+		
+		.mask:hover {
+			color: #ffffff;
+		}
+
+		/* <p>这是测试<span class="mask">并且被掩盖的</span>文字！</p> */
