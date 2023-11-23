@@ -32,7 +32,7 @@ var DIRECTION = {
 };
 
 var rounds = [5, 5, 3, 3, 2];
-var colors = ['#1abc9c', '#2ecc71', '#3498db', '#e74c3c', '#9b59b6'];
+var colors = ['#1abc9c', '#2ecc71', '#171717', '#3498db', '#0070ff'];
 
 // The ball object (The cube that bounces back and forth)
 var Ball = {
@@ -54,12 +54,12 @@ var Paddle = {
 	new: function (side) {
 		return {
 			width: 18,
-			height: 70,
+			height: 150,
 			x: side === 'left' ? 150 : this.canvas.width - 150,
-			y: (this.canvas.height / 2) - 35,
+			y: (this.canvas.height / 2) - 75,
 			score: 0,
 			move: DIRECTION.IDLE,
-			speed: 10
+			speed: 100
 		};
 	}
 };
@@ -83,7 +83,7 @@ var Game = {
 		this.running = this.over = false;
 		this.turn = this.paddle;
 		this.timer = this.round = 0;
-		this.color = '#2c3e50';
+		this.color = '#171717';
 
 		Pong.menu();
 		Pong.listen();
