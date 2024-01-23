@@ -1,11 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
 
-/*
-	Future Imperfect by HTML5 UP 蓝蓝LanLan
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -3639,3 +3635,24 @@ input, select, textarea {
 		}
 
 		/* <p>这是测试<span class="mask">并且被掩盖的</span>文字！</p> */
+
+			/* 滚动条 */
+	/* 宽度 */
+::-webkit-scrollbar {
+	width: 8px;
+  }
+  
+  /* 跟踪 */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1;
+  }
+  
+  /* 句柄 */
+  ::-webkit-scrollbar-thumb {
+	background: #888;
+  }
+  
+  /* 悬停处理 */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #666;
+  }
